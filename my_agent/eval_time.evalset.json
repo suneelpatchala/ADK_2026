@@ -1,0 +1,55 @@
+{
+  "eval_set_id": "eval_time",
+  "name": "Time Tool Evaluation Set",
+  "description": "Tests if the agent correctly invokes get_current_time for city time inquiries",
+  "eval_cases": [
+    {
+      "eval_id": "test_time_new_york",
+      "conversation": [
+        {
+          "invocation_id": "inv_1",
+          "user_content": {
+            "parts": [
+              {
+                "text": "What time is it in New York right now?"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_current_time",
+                "args": {
+                  "city": "New York"
+                }
+              }
+            ],
+            "tool_responses": [],
+            "intermediate_responses": []
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "test_greeting_no_tool",
+      "conversation": [
+        {
+          "invocation_id": "inv_2",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Hello! What can you do?"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [],
+            "tool_responses": [],
+            "intermediate_responses": []
+          }
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,8 @@
+# Enable Vertex AI (Enterprise) mode
+GOOGLE_GENAI_USE_VERTEXAI=true
+GOOGLE_GENAI_USE_ENTERPRISE=true
+
+# Google Cloud Configuration
+GOOGLE_CLOUD_PROJECT=suneel-adk-2026
+GOOGLE_CLOUD_LOCATION=us-east1
+
